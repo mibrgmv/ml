@@ -17,7 +17,5 @@ class MyLinearRegression:
 
     def predict(self, X_test: np.array) -> np.array:
         X_test = np.hstack((np.ones((X_test.shape[0], 1)), X_test))
-
         pred = X_test @ self.weights
-
         return pred
